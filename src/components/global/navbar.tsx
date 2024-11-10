@@ -11,9 +11,9 @@ const Navbar = async (props: Props) => {
       <aside className="flex items-center gap-[2px]">
         <p className="text-3xl font-bold">B</p>
         <Image
-          src="/botlesLogo.png"
-          width={22}
-          height={22}
+          src="/botlesLogo.svg"
+          width={18}
+          height={18}
           alt="botles logo"
           className="shadow-sm"
         />
