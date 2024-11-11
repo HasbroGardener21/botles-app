@@ -12,6 +12,7 @@ import {
 import { menuOptions } from "@/lib/constants";
 import clsx from "clsx";
 import { Separator } from "@/components/ui/separator";
+import { ModeToggle } from "../global/mod-toggle";
 
 type Props = {};
 
@@ -55,6 +56,10 @@ const MenuOptions = (props: Props) => {
           ))}
         </TooltipProvider>
         <Separator />
+      </div>
+
+      <div className="flex items-center justify-center flex-col gap-8">
+        <ModeToggle />
       </div>
     </nav>
   );
