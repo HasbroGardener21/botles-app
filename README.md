@@ -10,6 +10,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - [Running the Development Server](#running-the-development-server)
 - [Deployment](#deploy-on-vercel)
 
+## Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/botles-team/botles-app.git
+cd botles-app
+npm install
+```
+
 ## Features
 - **Clerk Authentication**: Secure user authentication with Clerk.
 - **Google Scopes Integration**: Read-only access to Google Drive content, metadata, and activity.
@@ -52,16 +62,6 @@ The following Google scopes are used to grant read-only access to Google Drive d
    - Configure OAuth consent and set up the necessary OAuth 2.0 credentials for web application access.
    - In Clerk, configure your Google OAuth settings to include the specified scopes.
 
-## Getting Started
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/botles-team/botles-app.git
-cd botles-app
-npm install
-```
-
 ## Running the Development Server
 
 To start the development server, use one of the following commands:
@@ -77,9 +77,3 @@ bun dev
 ```
 
 Then, open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
