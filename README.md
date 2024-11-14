@@ -57,8 +57,8 @@ The following Google scopes are used to grant read-only access to Google Drive d
 Clone the repository and install dependencies:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/botles-team/botles-app.git
+cd botles-app
 npm install
 ```
 
