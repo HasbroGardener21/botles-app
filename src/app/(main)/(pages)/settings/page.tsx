@@ -17,7 +17,7 @@ const Settings = (props: Props) => {
             Add or update your information
           </p>
         </div>
-
+        
         <ProfileForm />
       </div>
     </div>
