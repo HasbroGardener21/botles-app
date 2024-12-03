@@ -65,7 +65,7 @@ const ProfileForm = (props: Props) => {
         className="self-start hover:bg-[#2F006B] hover:text-white">
         {isLoading ? (
           <>
-            <Loader2 className="" />
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
             Saving
           </>
         ) : (
