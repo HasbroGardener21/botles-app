@@ -9,6 +9,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import "./globals.css";
+import ModalProvider from "@/providers/modal-provider";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange>
-            {children}
+            <ModalProvider>{children}</ModalProvider>
           </ThemeProvider>
         </body>
       </html>
