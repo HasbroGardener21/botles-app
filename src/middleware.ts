@@ -3,12 +3,13 @@ import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 const isPublicRoute = createRouteMatcher([
   "/",
   "/api/clerk-webhook",
-  "/api/drive-activity",
-  "/notification",
+  "/sign-in(.*)",
+  "/sign-up(.*)",
+  "/api/drive-activity/notification",
 ]);
 
-export default clerkMiddleware(async (auth, req) => {
-  if (isPublicRoute(req)) return;
+export default clerkMiddleware(async (auth, request) => {
+  if (isPublicRoute(request)) return;
   await auth.protect();
 });
 
